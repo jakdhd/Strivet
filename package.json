@@ -1,0 +1,17 @@
+{
+  "name": "strive",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/server",
+    "packages/web",
+    "packages/bot"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "server": "npm run dev -w packages/server",
+    "web": "npm run dev -w packages/web",
+    "bot": "npm run dev -w packages/bot"
+  }
+}
